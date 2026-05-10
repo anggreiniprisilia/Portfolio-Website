@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anggreini's Portfolio 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Luxurious+Script&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- ====== NAVIGATION====== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="nav-logo-script">A</span><span class="nav-logo-text">nggreini</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#blog" class="nav-link">Blog</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-hamburger" id="navHamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ====== WELCOME ====== -->
+  <section class="page" id="welcome">
+    <div class="welcome-stars">
+      <svg class="star star-lg" viewBox="0 0 50 50"><path d="M25 2 L27.5 22.5 L48 25 L27.5 27.5 L25 48 L22.5 27.5 L2 25 L22.5 22.5 Z"/></svg>
+      <svg class="star star-sm" viewBox="0 0 30 30"><path d="M15 1 L16.5 13.5 L29 15 L16.5 16.5 L15 29 L13.5 16.5 L1 15 L13.5 13.5 Z"/></svg>
+      <svg class="star star-xs" viewBox="0 0 20 20"><path d="M10 1 L11 9 L19 10 L11 11 L10 19 L9 11 L1 10 L9 9 Z"/></svg>
+    </div>
+    <div class="welcome-content">
+      <p class="welcome-sub">Anggreini's Portfolio</p>
+      <h1 class="welcome-title">Welcome</h1>
+      <button class="explore-btn" id="exploreBtn">
+        <span>Explore</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ====== PORTFOLIO TITLE ====== -->
+  <section class="page parallax-page" id="portfolio" data-speed="0.4">
+    <div class="parallax-bg"></div>
+    <div class="portfolio-wrap">
+      <div class="star-group left-stars">
+        <svg class="star star-med" viewBox="0 0 40 40"><path d="M20 1 L22 18 L39 20 L22 22 L20 39 L18 22 L1 20 L18 18 Z"/></svg>
+        <svg class="star star-xs" viewBox="0 0 20 20"><path d="M10 1 L11 9 L19 10 L11 11 L10 19 L9 11 L1 10 L9 9 Z"/></svg>
+      </div>
+      <div class="portfolio-big">
+        <div class="port-line">
+          <span class="script-red">Port</span><span class="blue-num">20</span>
+        </div>
+        <div class="port-line">
+          <span class="script-red">folio</span><span class="blue-num small-num">26</span>
+        </div>
+        <div class="name-badge">Anggreini Prisilia Lumi</div>
+      </div>
+      <div class="star-group right-stars">
+        <svg class="star star-med" viewBox="0 0 40 40"><path d="M20 1 L22 18 L39 20 L22 22 L20 39 L18 22 L1 20 L18 18 Z"/></svg>
+        <svg class="star star-xs" viewBox="0 0 20 20"><path d="M10 1 L11 9 L19 10 L11 11 L10 19 L9 11 L1 10 L9 9 Z"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="page parallax-page" id="about" data-speed="0.25">
+    <div class="parallax-bg about-bg-color"></div>
+    <div class="about-wrap">
+      <div class="about-title-row">
+        <span class="script-light-lg">About</span>
+        <span class="poppins-about-me">Me</span>
+      </div>
+      <div class="about-body">
+        <div class="about-left">
+          <div class="avatar-ring">
+            <img src="images\avatar.png" alt="Anggreini" class="avatar-img" onerror="this.style.display='none';document.querySelector('.avatar-fallback').style.display='flex'"/>
+            <div class="avatar-fallback">
+              <span>📸</span>
+              <small>images/avatar.png</small>
+            </div>
+          </div>
+          <div class="float-badge badge-top-left">IT Enthusiast</div>
+          <div class="float-badge badge-mid-right">Student</div>
+          <div class="float-badge badge-bottom-left">Graphic Designer</div>
+        </div>
+        <div class="about-right">
+          <div class="hi-script">Hi</div>
+          <div class="about-card">
+            <p>I'm Anggreini Prisilia Lumi. A Visual Designer who speaks in pixels and thinks in code. Currently pursuing my degree at Sam Ratulangi University, I bridge the gap between aesthetic storytelling and technical innovation. Whether I'm crafting a brand identity or exploring the latest in IT, I'm driven by one goal: creating digital experiences that are as functional as they are beautiful.</p>
+          </div>
+          <div class="skills-row">
+            <h3 class="skills-label">Skills &amp; Tools</h3>
+            <div class="skill-icons">
+              <div class="skill-chip" title="Canva">
+                <img src="images\canva.jpg" alt="Canva" onerror="this.parentElement.innerHTML='<span>Canva</span>'"/>
+              </div>
+              <div class="skill-chip" title="Lightroom">
+                <img src="images\Lr.jpg" alt="Lightroom" onerror="this.parentElement.innerHTML='<span>Lr</span>'"/>
+              </div>
+              <div class="skill-chip" title="Figma">
+                <img src="images\figma.jpg" alt="Figma" onerror="this.parentElement.innerHTML='<span>Figma</span>'"/>
+              </div>
+              <div class="skill-chip" title="Flutter">
+                <img src="images\flutter.jpg" alt="Flutter" onerror="this.parentElement.innerHTML='<span>Flutter</span>'"/>
+              </div>
+              <div class="skill-chip" title="VS Code">
+                <img src="images\vscode.jpg" alt="VS Code" onerror="this.parentElement.innerHTML='<span>VS Code</span>'"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== EXPERIENCE ====== -->
+  <section class="page parallax-page" id="experience" data-speed="0.15">
+    <div class="parallax-bg exp-bg-color"></div>
+    <div class="exp-sides">
+      <div class="exp-side-bar left-bar"></div>
+      <div class="exp-side-bar right-bar"></div>
+    </div>
+    <div class="exp-wrap">
+      <div class="exp-title">
+        <span class="exp-org-label">Organization</span>
+        <div class="exp-heading">
+          <span class="script-blue-exp">E</span><span class="exp-rest">xperience</span>
+        </div>
+      </div>
+      <div class="exp-list">
+        <div class="exp-item reveal">Anggota Sie. Sekretariat &amp; Kesehatan Tim Kerja RP3 UPK Kr. FT UNSRAT 2025</div>
+        <div class="exp-item reveal">Anggota Sie. Sekretariat Panitia Pelaksana Bible Camp XXXVIIII FT UNSRAT 2025</div>
+        <div class="exp-item reveal">Anggota Divisi Multimedia Panitia TechoFest 2025</div>
+        <div class="exp-item reveal">Anggota Divisi Mobile Developer UNITY Batch 2025</div>
+        <div class="exp-item reveal">Pengurus Divisi Multimedia UNITY 2026</div>
+        <div class="exp-item reveal">Anggota Sie. Sekretariat Panitia Pelaksana Bible Camp XL FT UNSRAT 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GALLERY ====== -->
+  <section class="page parallax-page" id="gallery" data-speed="0.3">
+    <div class="parallax-bg gallery-bg-color"></div>
+    <div class="gallery-wrap">
+      <div class="gallery-title-row">
+        <svg class="star star-sm" viewBox="0 0 30 30"><path d="M15 1 L16.5 13.5 L29 15 L16.5 16.5 L15 29 L13.5 16.5 L1 15 L13.5 13.5 Z"/></svg>
+        <div class="gallery-title-text">
+          <span class="gallery-pretitle">My Graphic Design</span>
+          <span class="gallery-script">Gallery</span>
+        </div>
+        <svg class="star star-sm" viewBox="0 0 30 30"><path d="M15 1 L16.5 13.5 L29 15 L16.5 16.5 L15 29 L13.5 16.5 L1 15 L13.5 13.5 Z"/></svg>
+      </div>
+      <div class="gallery-grid">
+        <div class="g-item g-tall reveal">
+          <img src="images\gallery-1.png" alt="Gallery 1" onerror="this.parentElement.classList.add('g-placeholder')"/>
+          <span class="g-ph-text">gallery-1.png</span>
+        </div>
+        <div class="g-item g-short-top reveal">
+          <img src="images\gallery-2.png" alt="Gallery 2" onerror="this.parentElement.classList.add('g-placeholder')"/>
+          <span class="g-ph-text">gallery-2.png</span>
+        </div>
+        <div class="g-item reveal">
+          <img src="images\gallery-3.png" alt="Gallery 3" onerror="this.parentElement.classList.add('g-placeholder')"/>
+          <span class="g-ph-text">gallery-3.png</span>
+        </div>
+        <div class="g-item reveal">
+          <img src="images\gallery-4.png" alt="Gallery 4" onerror="this.parentElement.classList.add('g-placeholder')"/>
+          <span class="g-ph-text">gallery-4.png</span>
+        </div>
+        <div class="g-item reveal">
+          <img src="images\gallery-5.png" alt="Gallery 5" onerror="this.parentElement.classList.add('g-placeholder')"/>
+          <span class="g-ph-text">gallery-5.png</span>
+        </div>
+        <div class="g-item reveal">
+          <img src="images\gallery-6.png" alt="Gallery 6" onerror="this.parentElement.classList.add('g-placeholder')"/>
+          <span class="g-ph-text">gallery-6.png</span>
+        </div>
+        <div class="g-item g-short-bottom reveal">
+          <img src="images\gallery-7.png" alt="Gallery 7" onerror="this.parentElement.classList.add('g-placeholder')"/>
+          <span class="g-ph-text">gallery-7.png</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== BLOG ====== -->
+  <section class="page parallax-page" id="blog" data-speed="0.2">
+    <div class="parallax-bg blog-bg-color"></div>
+    <div class="blog-wrap">
+      <h2 class="blog-heading"><span class="blog-script-b">B</span>log</h2>
+      <div class="blog-grid">
+
+        <article class="blog-card reveal" data-article="1">
+          <div class="blog-img-wrap">
+            <img src="images\blog-1.jpg" alt="Design Changing Forever" onerror="this.parentElement.classList.add('blog-img-ph')"/>
+            <span class="blog-ph-txt">blog-1.jpg</span>
+          </div>
+          <div class="blog-info">
+            <h3>On the Inevitability of Design Changing Forever <em>-by Andrew Boardman</em></h3>
+            <p>Three scenarios for the future of graphic design — and your work</p>
+          </div>
+        </article>
+
+        <article class="blog-card reveal" data-article="2">
+          <div class="blog-img-wrap">
+            <img src="images\blog-2.jpg" alt="AI serif fonts" onerror="this.parentElement.classList.add('blog-img-ph')"/>
+            <span class="blog-ph-txt">blog-2.jpg</span>
+          </div>
+          <div class="blog-info">
+            <h3>Why AI brands are obsessed with serif fonts <em>-by Daniel John</em></h3>
+            <p>We talk to a creative director at Monotype about the rising trend for 'human' type.</p>
+          </div>
+        </article>
+
+        <article class="blog-card reveal" data-article="3">
+          <div class="blog-img-wrap">
+            <img src="images\blog-3.jpg" alt="Graphic design trends 2026" onerror="this.parentElement.classList.add('blog-img-ph')"/>
+            <span class="blog-ph-txt">blog-3.jpg</span>
+          </div>
+          <div class="blog-info">
+            <h3>Texture, warmth and tactile rebellion: the big graphic design trends for 2026</h3>
+            <p>From handcrafted rebellion to layered storytelling, it's all about personality, warmth and unmistakably human design.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section class="page" id="contact">
+    <div class="contact-wrap">
+      <div class="contact-center">
+        <h2 class="contact-heading">
+          <span class="contact-my">My</span>
+          <span class="contact-script">Contact</span>
+        </h2>
+        <div class="contact-links">
+          <div class="contact-row reveal">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <a href="https://github.com/anggreiniprisilia" class="contact-val">https://github.com/anggreiniprisilia</a>
+          </div>
+          <div class="contact-row reveal">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.11 6.11l1.18-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span class="contact-val">+62823 4624 5835</span>
+          </div>
+          <div class="contact-row reveal">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:lumianggreini91@gmail.com" class="contact-val">lumianggreini91@gmail.com</a>
+          </div>
+          <div class="contact-row reveal">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <a href="https://instagram.com/anggreinilumi" class="contact-val">@anggreinilumi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ARTICLE MODAL ====== -->
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="article-modal" id="articleModal">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <div class="modal-inner" id="modalInner"></div>
+  </div>
+
+  <script src="js/articles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
