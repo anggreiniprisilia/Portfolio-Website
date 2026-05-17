@@ -1,8 +1,6 @@
-// ============================================================
-// ARTICLE DATA
-// ============================================================
+// isi article
 
-const ARTICLES = {
+var ARTICLES = {
   1: {
     title: "On the Inevitability of Design Changing Forever",
     author: "by Andrew Boardman",
