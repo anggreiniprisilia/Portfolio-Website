@@ -4,7 +4,7 @@ var ARTICLES = {
   1: {
     title: "On the Inevitability of Design Changing Forever",
     author: "by Andrew Boardman",
-    heroImage: "images\blog-1.jpg",  
+    heroImage: "images/blog-1.jpg", 
     content: `
       <p>Dear Designer,</p>
       <p>I've had a hard time putting into words what I'm thinking and feeling about the fragile state of graphic design these days. I am seeing definitive, dramatic, and dire signals flashing.</p>
@@ -27,7 +27,7 @@ var ARTICLES = {
   2: {
     title: "Why AI brands are obsessed with serif fonts",
     author: "by Daniel John",
-    heroImage: "images\blog-2.jpg",  
+    heroImage: "images/blog-2.jpg",  
     content: `
       <h3>Why are AI brands turning to serif fonts?</h3>
       <p>In order to seem more human. They're also turning to serif fonts for differentiation — from other tech companies, from their AI competition, and from the myriad brands of the last quarter century who have used humanist, geometric, and grotesque sans serifs.</p>
@@ -50,7 +50,7 @@ var ARTICLES = {
   3: {
     title: "Texture, warmth and tactile rebellion: the big graphic design trends for 2026",
     author: "by Fern May",
-    heroImage: "images\blog-3.jpg",  
+    heroImage: "images/blog-3.jpg",  
     content: `
       <p>After years of watching slick, algorithm-friendly design disappear surfaces from app interfaces to superimposed glass, something fundamental is shifting. Today's brands are creating a victory of human-made touches reaching for texture, humanity and distinctiveness in an increasingly synthetic world.</p>
 
