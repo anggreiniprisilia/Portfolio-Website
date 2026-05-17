@@ -704,13 +704,17 @@ a.contact-val:hover { color: var(--red); }
   pointer-events: none;
   transition: opacity 0.35s;
   backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 .modal-overlay.open { opacity: 1; pointer-events: all; }
 
 .article-modal {
-  position: fixed;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -48%) scale(0.94);
+  position: relative;
+  margin: auto;
+  transform: translateY(20px) scale(0.94);
   z-index: 1001;
   width: min(760px, 92vw);
   max-height: 85vh;
@@ -726,7 +730,7 @@ a.contact-val:hover { color: var(--red); }
 .article-modal.open {
   opacity: 1;
   pointer-events: all;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translateY(0) scale(1);
 }
 
 .modal-close {
