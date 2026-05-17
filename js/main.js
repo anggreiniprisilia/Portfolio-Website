@@ -1,7 +1,6 @@
 (function () {
   'use strict';
 
-  // ---- DOM references ----
   const navbar       = document.getElementById('navbar');
   const exploreBtn   = document.getElementById('exploreBtn');
   const navHamburger = document.getElementById('navHamburger');
@@ -12,9 +11,7 @@
   const modalInner   = document.getElementById('modalInner');
   const welcomeSection = document.getElementById('welcome');
 
-  // ============================================================
-  // 1. EXPLORE BUTTON → smooth scroll past welcome
-  // ============================================================
+  // explore button
   if (exploreBtn) {
     exploreBtn.addEventListener('click', () => {
       const portfolioSection = document.getElementById('portfolio');
@@ -24,16 +21,13 @@
     });
   }
 
-  // ============================================================
-  // 2. NAVBAR — show/hide based on scroll position & section
-  // ============================================================
+  // navbar
   function updateNavbar() {
     const scrollY = window.scrollY;
     const welcomeBottom = welcomeSection
       ? welcomeSection.offsetTop + welcomeSection.offsetHeight - 80
       : 0;
 
-    // Show navbar only when scrolled past the welcome section
     if (scrollY > welcomeBottom) {
       navbar.classList.add('visible');
     } else {
@@ -41,7 +35,6 @@
       navLinks.classList.remove('open'); // close mobile menu when back on welcome
     }
 
-    // Add shadow on scroll
     if (scrollY > welcomeBottom + 20) {
       navbar.classList.add('scrolled');
     } else {
@@ -49,7 +42,6 @@
     }
   }
 
-  // ---- Active nav link highlight ----
   function updateActiveNavLink() {
     const sections = document.querySelectorAll('.page[id]');
     const navLinkEls = document.querySelectorAll('.nav-link');
@@ -79,25 +71,20 @@
 
   updateNavbar(); // initial call
 
-  // ============================================================
-  // 3. HAMBURGER MENU (mobile)
-  // ============================================================
+  // hamburger menu
   if (navHamburger) {
     navHamburger.addEventListener('click', () => {
       navLinks.classList.toggle('open');
     });
   }
 
-  // Close mobile menu when a link is clicked
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('open');
     });
   });
 
-  // ============================================================
-  // 4. PARALLAX EFFECT
-  // ============================================================
+  // parallax
   const parallaxPages = document.querySelectorAll('.parallax-page');
 
   function handleParallax() {
@@ -116,11 +103,9 @@
     });
   }
 
-  handleParallax(); // initial
+  handleParallax(); 
 
-  // ============================================================
-  // 5. SCROLL REVEAL (IntersectionObserver)
-  // ============================================================
+  // scroll
   const revealEls = document.querySelectorAll('.reveal');
 
   const revealObserver = new IntersectionObserver(
@@ -141,14 +126,11 @@
 
   revealEls.forEach(el => revealObserver.observe(el));
 
-  // ============================================================
-  // 6. BLOG CARD → ARTICLE MODAL
-  // ============================================================
+  // blog
   function openArticle(articleId) {
     const article = ARTICLES[articleId];
     if (!article) return;
 
-    // Build modal content
     modalInner.innerHTML = `
       <h2>${article.title}</h2>
       <p class="modal-author">${article.author}</p>
@@ -171,7 +153,6 @@
     document.body.style.overflow = '';
   }
 
-  // Attach click to each blog card
   document.querySelectorAll('.blog-card').forEach(card => {
     card.addEventListener('click', () => {
       const id = parseInt(card.dataset.article, 10);
@@ -182,20 +163,16 @@
   if (modalClose)   modalClose.addEventListener('click', closeArticle);
   if (modalOverlay) modalOverlay.addEventListener('click', closeArticle);
 
-  // Close on Escape key
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeArticle();
   });
 
-  // ============================================================
-  // 7. STAR SPARKLE ANIMATION (welcome page)
-  // ============================================================
+  // star animation
   const stars = document.querySelectorAll('.welcome-stars .star');
   stars.forEach((star, i) => {
     star.style.animation = `starPulse ${2 + i * 0.6}s ease-in-out ${i * 0.3}s infinite alternate`;
   });
 
-  // Inject keyframes dynamically (so no extra CSS file needed)
   const styleTag = document.createElement('style');
   styleTag.textContent = `
     @keyframes starPulse {
@@ -205,9 +182,7 @@
   `;
   document.head.appendChild(styleTag);
 
-  // ============================================================
-  // 8. SMOOTH SCROLL for nav links
-  // ============================================================
+  // scroll smooth
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const target = document.querySelector(this.getAttribute('href'));
@@ -220,11 +195,7 @@
     });
   });
 
-  // ============================================================
-  // 9. INITIAL REVEAL PASS (elements already visible on load)
-  // ============================================================
   function handleReveal() {
-    // Handled by IntersectionObserver above
   }
 
 })();
