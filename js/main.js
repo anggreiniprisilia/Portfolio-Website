@@ -142,12 +142,14 @@
     `;
 
     modalOverlay.classList.add('open');
+    articleModal.classList.add('open');
     document.body.style.overflow = 'hidden';
     modalOverlay.scrollTop = 0;
   }
 
   function closeArticle() {
     modalOverlay.classList.remove('open');
+    articleModal.classList.remove('open');
     document.body.style.overflow = '';
   }
 
@@ -161,8 +163,8 @@
   if (modalClose)   modalClose.addEventListener('click', closeArticle);
   if (modalOverlay) {
   modalOverlay.addEventListener('click', e => {
-    if (!articleModal.contains(e.target)) closeArticle();
-  });
+      if (e.target === modalOverlay) closeArticle();  // ← ubah kondisi ini
+    });
 }
 
   document.addEventListener('keydown', e => {
