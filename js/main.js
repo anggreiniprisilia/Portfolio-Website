@@ -142,14 +142,12 @@
     `;
 
     modalOverlay.classList.add('open');
-    articleModal.classList.add('open');
     document.body.style.overflow = 'hidden';
-    articleModal.scrollTop = 0;
+    modalOverlay.scrollTop = 0;
   }
 
   function closeArticle() {
     modalOverlay.classList.remove('open');
-    articleModal.classList.remove('open');
     document.body.style.overflow = '';
   }
 
@@ -161,7 +159,11 @@
   });
 
   if (modalClose)   modalClose.addEventListener('click', closeArticle);
-  if (modalOverlay) modalOverlay.addEventListener('click', closeArticle);
+  if (modalOverlay) {
+  modalOverlay.addEventListener('click', e => {
+    if (!articleModal.contains(e.target)) closeArticle();
+  });
+}
 
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeArticle();
