@@ -1,4 +1,4 @@
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
   'use strict';
 
   const navbar       = document.getElementById('navbar');
@@ -202,4 +202,4 @@
   function handleReveal() {
   }
 
-})();
+});
