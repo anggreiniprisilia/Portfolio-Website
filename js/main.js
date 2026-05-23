@@ -153,17 +153,17 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.overflow = '';
   }
 
-  document.querySelectorAll('.blog-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const id = parseInt(card.dataset.article, 10);
-      openArticle(id);
-    });
+  document.querySelector('.blog-grid').addEventListener('click', e => {
+    const card = e.target.closest('.blog-card');
+    if (!card) return;
+    const id = parseInt(card.dataset.article, 10);
+    openArticle(id);
   });
 
   if (modalClose)   modalClose.addEventListener('click', closeArticle);
   if (modalOverlay) {
   modalOverlay.addEventListener('click', e => {
-      if (e.target === modalOverlay) closeArticle();  // ← ubah kondisi ini
+      if (!articleModal.contains(e.target)) closeArticle();  
     });
 }
 
